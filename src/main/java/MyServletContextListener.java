@@ -1,11 +1,8 @@
+
+
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-
-class MyThreadClass extends Thread{
-    public void run(){}
-    public void doShutdown(){}
-}
 
 public class MyServletContextListener implements ServletContextListener{
     private MyThreadClass myThread = null;
@@ -24,4 +21,5 @@ public class MyServletContextListener implements ServletContextListener{
         } catch (Exception ex) {
         }
     }
+
 }
